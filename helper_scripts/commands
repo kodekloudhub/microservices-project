@@ -1,0 +1,8 @@
+docker rmi $(docker images -q)
+docker rm $(docker ps -a -q)
+
+docker build -t my-app .
+docker run -p 5000:5000 my-app
+
+docker pull 666234783044.dkr.ecr.eu-central-1.amazonaws.com/aws-microservice:c747243
+docker run -p 5000:5000 666234783044.dkr.ecr.eu-central-1.amazonaws.com/aws-microservice:c747243

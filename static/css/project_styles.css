@@ -1,0 +1,53 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* A modern font */
+  background: #f4f4f4; /* A light background to complement the content */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px; /* Increased gap */
+  padding: 40px; /* More padding around the grid */
+}
+
+.header {
+  text-align: center;
+  grid-column: 1 / -1;
+  color: #333; /* Darker text for better contrast */
+}
+
+.product {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Smoother shadow */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures the content fits in the border radius */
+  background: #ffffff; /* White background for each product */
+  transition: transform 0.3s ease; /* Animation on hover */
+}
+
+.product:hover {
+  transform: translateY(-5px); /* Slight raise effect on hover */
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee; /* A subtle separator */
+}
+
+button {
+  background-color: #0056b3; /* A calmer shade of blue */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+button:hover {
+  background-color: #003d82; /* Darken button on hover */
+}

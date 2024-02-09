@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .order-details {
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Order Receipt</h1>
+        </div>
+        <div class="order-details">
+            <h2>Order Details</h2>
+            <p><strong>Order ID:</strong> {{ product_id }}</p>
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>Address:</strong> {{ address }}</p>
+            <p><strong>Quantity:</strong> {{ quantity }}</p>
+        </div>
+        <div class="footer">
+            <p>Thank you for your order!</p>
+        </div>
+    </div>
+</body>
+</html>
